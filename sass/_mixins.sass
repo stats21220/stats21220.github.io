@@ -1,0 +1,20 @@
+@mixin btn_hover
+    &:hover
+        transition: 1s all
+        background-image: none
+        background-color: $main-color
+@mixin text-style-font
+    font:
+        stretch: normal
+        style: normal
+    letter-spacing: normal
+@mixin style-btn
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+    font-weight: 400
+    @include text-style-font
+    text-align: center
+    color: #ffffff;
+    outline: none
